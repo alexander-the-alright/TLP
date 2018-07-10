@@ -1,0 +1,69 @@
+############################################################################################
+
+					USABLE COMMANDS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	CLEAR	->	Clears the screen
+	EDIT	->	Opens the edit menu
+	EXIT	->	Ends the program
+	HELP	->	Opens the help menu
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	CLEAR
+
+		Uses the built-in clear screen command for Windows command line interface.
+		Further revisions will probably include support for this command on other
+		operating systems.
+
+-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^
+
+	EDIT
+
+		Calls a different python script to run the separated menu. This menu
+		contains seven different subcommands, enumerated below.
+
+		add	->	Adds a new entry to the data. Currently only intelligently
+				supports verbs and nouns.
+		edit	->	Edits the translation of an existing entry. If the English
+				part of the entry is wrong, it must be deleted to be fixed.
+		delete	->	Completely deletes a translation pair.
+		stop	->	Goes back to look-up mode. Also calls CLEAR.
+
+
+	The following are for users who are fully aware of what they are doing
+
+--------------------------------------------------------------------------------------------
+
+		fadd	->	add subcommand, but without the helpful dialogue and
+				warnings.
+		fedit	->	edit subcommand, but without the helpful dialogue and
+				warnings.
+		fdel	->	delete subcommand, but without the helpful dialogue and
+				warnings.
+
+--------------------------------------------------------------------------------------------
+
+-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^
+
+	EXIT
+
+		Gracefully exits the program.
+
+-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^
+
+	HELP
+
+		Enters the help menu, where the user can prompt for directions on how to
+		use the program. This menu contains several different subcommands, which
+		provide information on the different parts of speech and how it works in
+		Italian. They are enumerated below, as of the last revision.
+
+		prepositions	->	Prepositions
+		verbs		->	Present-Tense Verb Conjugation
+
+		list		->	Lists the available subcommands commands, as well
+					as subcommands that will be available in the future
+		
+############################################################################################

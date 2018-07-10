@@ -1,0 +1,91 @@
+############################################################################################
+
+				PRESENT TENSE VERB CONJUGATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	INFINITIVE - xxxare
+
+		/-------------------------------|-----------------------\
+		|	I	 / IO		|	WE	/ NOI	|
+		|				|			|
+		|	xxxo			|	xxxiamo		|
+		|-------------------------------|-----------------------|
+		|	YOU	/ TU		|	YOU ALL	/ VOI	|
+		|				|			|
+		|	xxxi			|	xxxate		|
+		|-------------------------------|-----------------------|
+		|	HE/SHE	/ LUI/LEI	|	THEY	/ LORO	|
+		|				|			|
+		|	xxxa			|	xxxano		|
+		|				|			|
+		\-------------------------------|-----------------------/
+
+
+	INFINITIVE - xxxere
+
+		/-------------------------------|-----------------------\
+		|	I	 / IO		|	WE	/ NOI	|
+		|				|			|
+		|	xxxo			|	xxxiamo		|
+		|-------------------------------|-----------------------|
+		|	YOU	/ TU		|	YOU ALL	/ VOI	|
+		|				|			|
+		|	xxxi			|	xxxete		|
+		|-------------------------------|-----------------------|
+		|	HE/SHE	/ LUI/LEI	|	THEY	/ LORO	|
+		|				|			|
+		|	xxxe			|	xxxono		|
+		|				|			|
+		\-------------------------------|-----------------------/
+
+
+	INFINITIVE - xxxire
+
+		/-------------------------------|-----------------------\
+		|	I	 / IO		|	WE	/ NOI	|
+		|				|			|
+		|	xxxo			|	xxxiamo		|
+		|-------------------------------|-----------------------|
+		|	YOU	/ TU		|	YOU ALL	/ VOI	|
+		|				|			|
+		|	xxxi			|	xxxite		|
+		|-------------------------------|-----------------------|
+		|	HE/SHE	/ LUI/LEI	|	THEY	/ LORO	|
+		|				|			|
+		|	xxxe			|	xxxono		|
+		|				|			|
+		\-------------------------------|-----------------------/
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RULES
+		xxx	-	a/e/i	-	re
+		 ^		  ^		 ^
+infinitive - 	body		flavor		end
+
+	For regular verbs, I / IO is always conjugated as the infinitive body, appended
+	with an -o. The YOU / TU form is ways conjugated as the	infinitive body appended
+	with an -i.The HE/SHE / LUI/LEI form is the infinitive body, appended with
+	an -a for the /a/ flavor, and an -e for the other flavors. The WE / NOI form
+	is always conjugated as the infinitive body, with -iamo appended. The YOU ALL /
+	VOI form can be seen as the body of the infinitive, followed by the flavor of
+	the infinitive, finally appended with -te. It is easier to take the infinitive
+	itself and change the /r/ of the ending to a /t/, to yeild an equivalent composite
+	of
+
+				XXXARE / XXXERE / XXXIRE
+
+				    |	     |	      |
+				    V	     V	      V
+
+				XXXATE / XXXETE / XXXITE.
+
+	For THEY / LORO forms, append an -ano to the body if the flavor is an /a/, and
+	append an -ono for the other flavors.
+
+	For irregular verbs, you gotta memorize that shit.
+
+
+############################################################################################

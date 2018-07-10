@@ -1,0 +1,35 @@
+noun -> gendered intrinsicly
+
+word		-->	word
+-----------------------------------------------------------------------------
+verb -> conjugated by subject
+
+to word		-->	series of words separated by case of subject
+-----------------------------------------------------------------------------
+adjective -> relative to subject
+
+word		-->	(male singular)		word
+			(female singular)	word
+			(male plural)		word
+			(female plural)		word
+-----------------------------------------------------------------------------
+pronoun -> replaces noun
+
+word		-->	word
+-----------------------------------------------------------------------------
+article -> prefaces [pro]noun
+
+word		-->	word
+-----------------------------------------------------------------------------
+adverb -> describes verb
+
+wordly		-->	idk
+-----------------------------------------------------------------------------
+preposition -> describes secondary details
+
+word		-->	several forms idk
+-----------------------------------------------------------------------------
+conjunction -> joins two or more parts of a sentence
+
+word		-->	several forms idk
+-----------------------------------------------------------------------------

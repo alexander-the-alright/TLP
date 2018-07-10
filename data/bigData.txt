@@ -1,0 +1,28 @@
+ADJECTIVES
+
+data,data
+
+NOUNS
+
+data,data
+
+PREPOSITIONS
+
+data,data
+
+PRONOUNS
+
+data,data
+
+VERBS
+
+to data,data
+
+
+----------------------------------------
+
+	CREATE PARSING PROGRAM TO 
+	SEPARATE DIFFERENT TAGS INTO 
+	DIFFERENT DICTIONARIES
+
+----------------------------------------
