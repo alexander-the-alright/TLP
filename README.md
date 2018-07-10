@@ -7,11 +7,7 @@ Simply run tlp.py, preferably from the command line; the help menu prints odd in
 
 Future plans:
 
-1)	Implement a 'Did you mean XYZ?' method
-2)	Clone script for Russian
-	a)	Switch between the two languages during runtime
-	b)	I <--> R translation ==> I <- [ -> E <- ] -> R
-3)	Add/remove words during runtime
-4)	Separate lookup functions for different parts of a sentence
-	a)	vPrint
-	b)	Help to accentuate the context of specific uses of words
+1)	Implement auto-suggestion
+2)	Separate lookup functions for different parts of a sentence
+3)	Decide output language on the fly
+4)	Russian input helper
