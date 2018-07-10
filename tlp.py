@@ -15,10 +15,10 @@ prints it.
 #   IMPORTS
 #
 
-import os
-import codecs
+import os           # Used to CLS on Windows
+import codecs       # Used for Russian Unicode stuff
 
-from h import hp
+from h import hp    # Contains the help menu functinality
 
 ###########################################################
 
