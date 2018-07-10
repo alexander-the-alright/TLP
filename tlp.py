@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 
-#   Author:     Donnie Brasco
-#   Date:       Sure
+#   Author:     Sam Alexander
+#   Date:       7/10/18
+
+"""
+This file initializes internal data structures from data from the files
+in the /data/ folder, waits for user input, matches it do the data, and
+prints it.
+"""
 
 ###########################################################
 
