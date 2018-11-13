@@ -1,13 +1,5 @@
-# -*- coding: utf-8 -*-
-
-#   Author:     Sam Alexander
-#   Date:       7/10/18
-
-"""
-This file initializes internal data structures from data from the files
-in the /data/ folder, waits for user input, matches it do the data, and
-prints it.
-"""
+#   Author:     Donnie Brasco
+#   Date:       Sure
 
 ###########################################################
 
@@ -15,11 +7,51 @@ prints it.
 #   IMPORTS
 #
 
-import os           # Used to CLS on Windows
-import codecs       # Used for Russian Unicode stuff
+import os           # Used for clearing the screen
 
-from h import hp    # Contains the help menu functinality
+from h import hp    # Used for help menu
 
+###########################################################
+
+#
+#   FUNCTION DEFINITION 1
+#       Special print function for verbs
+#
+
+def vPrint(strang):
+
+#   /   VARIABLES   \
+    
+    global pairsV   # Get list of infinitives and translations
+    spl = pairsV.get(strang).split(',')
+    
+    vp = ['Infinitive',
+          'I\t/ Io',
+          'You\t/ Tu',
+          'He/She\t/ Lui/Lei',
+          'We\t/ Noi',
+          'You(pl)\t/ Voi',
+          'They\t/ Loro'
+         ]
+    
+#   \   VARIABLES   /
+
+
+#   /   BODY    \
+
+    print('\n  ENG\t\t  ->\tITAL')
+    
+    for c in range(len(spl)):
+        print(vp[c],end='')
+        if c == 3:
+            print(' ->\t',end='')
+        else:
+            print('\t  ->\t',end='')
+        print(spl[c])
+    print()
+    
+#   \   BODY    /
+    
 ###########################################################
 
 #
@@ -88,27 +120,27 @@ def add():
 #   /   BODY   \ 
 
     eng = input('What word would you like to add?\t').lower()
-    rus = input('What does that translate too?\t\t').lower()
+    itl = input('What does that translate too?\t\t').lower()
 
     while(True):
         
-        print('\nAre you sure you want to add { %s -> %s }?' % (eng, rus) )
+        print('\nAre you sure you want to add { %s -> %s }?' % (eng, itl) )
         yn = input('Type "yes" to confirm.\n\n').lower()
 
         if yn == y:
             if eng[:3] == v:
-                pairsV.update({eng : rus})
+                pairsV.update({eng : itl})
 
                 with open('data/dataV.txt','a') as addV:
-                    addV.write('%s,%s\n' % (eng, rus))
+                    addV.write('%s,%s\n' % (eng, itl))
                 
             else:
-                pairs.update({eng : rus})
+                pairs.update({eng : itl})
 
                 with open('data/data.txt','a') as addN:
-                    addN.write('%s,%s\n' % (eng, rus))
+                    addN.write('%s,%s\n' % (eng, itl))
                     
-            print('\nAdded { %s -> %s }' % (eng, rus) )
+            print('\nAdded { %s -> %s }' % (eng, itl) )
             break
         else:
             print('Add aborted.')
@@ -139,16 +171,16 @@ def fadd():
     itl = input().lower()
 
     if eng[:3] == v:
-        pairsV.update({eng : rus})
+        pairsV.update({eng : itl})
 
         with open('data/dataV.txt','a') as addV:
-            addV.write('%s,%s\n' % (eng, rus))
+            addV.write('%s,%s\n' % (eng, itl))
                 
     else:
         pairs.update({eng : itl})
 
         with open('data/data.txt','a') as addN:
-            addN.write('%s,%s\n' % (eng, rus))
+            addN.write('%s,%s\n' % (eng, itl))
 
 #   \   BODY   / 
 
@@ -340,12 +372,12 @@ pairsC = {}
 pairsPrn = {}
 pairsPrp = {}
 
-r = ''
+i = ''
 
-ext = 'EXIT'
+ext = ['EXIT','E']
 hlp = 'HELP'
 edt = 'EDIT'
-clr = 'CLEAR'
+clr = ['CLEAR','cls']
 
 Brk = 'stop'
 Add = 'add'
@@ -358,7 +390,6 @@ prep = []
 
 hlp1 = 'Type any word to find its translation, if it exists.\n'
 hlp2 = 'Type "EXIT" to exit, "HELP" for help, or "EDIT" to edit.\n'
-hlp2 = 'Type "EXIT" to exit or "EDIT" to edit.\n'
 hlp3 = 'Be sure to use the infinitive form of any verbs, e.g. "eat" -> "to eat".\n'
 hlp4 = 'Do not search verb conjugations, e.g. "eaten" or "ate".\n\n'
 hlpM = hlp1 + hlp2 + hlp3 + hlp4
@@ -380,63 +411,69 @@ cls = lambda: os.system('cls')
 
 #   /   FILE PARSING    1   \
 
-with codecs.open('data/data.txt','r','utf-8') as file:
+with open('data/data.txt') as file:
     for line in file:
         spl = line.lower().split(',')
         if spl[0] not in pairs:
-            rStr = ''
-            for rtal in spl[1:]:
-                rStr = rStr + ',' + str(rtal)
-            rStr = rStr[1:len(rStr)-1]
-            pairs.update({str(spl[0]) : rStr})
+            iStr = ''
+            for ital in spl[1:]:
+                iStr = iStr + ',' + str(ital)
+            iStr = iStr[1:len(iStr)-1]
+            pairs.update({str(spl[0]) : iStr})
 
 #   \   FILE PARSING    1   /
 
 
 #   /   FILE PARSING    2   \
 
-with codecs.open('data/dataV.txt','r','utf-8') as fileV:
+with open('data/dataV.txt') as fileV:
     for line in fileV:
         spl = line.lower().split(',')
         if spl[0] not in pairsV:
-            rStr = ''
-            for rtal in spl[1:]:
-                rStr = rStr + ',' + str(rtal)
-            rStr = rStr[1:len(rStr)-1]
-            pairsV.update({str(spl[0]) : rStr})
+            iStr = ''
+            for ital in spl[1:]:
+                iStr = iStr + ',' + str(ital)
+            iStr = iStr[1:len(iStr)-1]
+            pairsV.update({str(spl[0]) : iStr})
 
 #   \   FILE PARSING    2   /
 
 
 #   /   LOOKUP  \
 
-while r != ext:
+while not i in ext:
 
     try:
-        r = input(hlpM)
-        if r == ext:
-            break
-        if r == clr:
+        i = input(hlpM)
+        if i in ext:
+            continue
+        if i in clr:
             cls()
             continue
-        if r == hlp:
-            #hp.menu()
+        if i == hlp:
+            hp.menu()
             print()
             continue
-        if r == edt:
+        if i == edt:
             begin()
             continue
-        r = r.lower()
-        if r == '':
+        i = i.lower()
+        if i == '':
             continue
-        if r in pairs:
-            print(pairs.get(r),'\n')
-        elif r in pairs.values():
+        if i in pairs or i in pairsV:
+            if i in pairsV:
+                if i[:3] == v:
+                    vPrint(i)
+            else:
+                #print('\n  ENG\t->   ITAL')
+                print(i,'->',pairs.get(i),'\n')
+        elif i in pairs.values():
             for k in pairs.keys():
-                if pairs[k] == r:
-                    print(k,'\n')
+                if pairs[k] == i:
+                    #print('\n  ENG\t->   ITAL')
+                    print(k,'->',pairs.get(k),'\n')
                     break
-        elif r not in pairs:
+        elif i not in pairs:
             print(no)
     except (EOFError,KeyboardInterrupt):
         break
@@ -444,6 +481,6 @@ while r != ext:
 #   \   LOOKUP  /
 
 
-#exit()
+exit()
 
 ###########################################################
