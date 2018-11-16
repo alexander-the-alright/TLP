@@ -1,6 +1,19 @@
-#   Author:     Donnie Brasco
-#   Date:       Sure
-
+"""
+ ===============================================================================
+ Auth: Sam Celani
+ Prog: tlp.py
+ Revn: 11-16-2018 Ver 1.X
+ Func: Read in comma-separated data from file(s), load into dictionary(s)
+       Parse user data, either [edit] or [lookup]
+       [edit]: call h/hp.py, more info there
+       [lookup]: use {}.get(), or search {}.values() & return key at that index
+       Print associated key and value
+ ===============================================================================
+ CHANGE LOG
+ -------------------------------------------------------------------------------
+ ??-??-20??:  
+ 
+"""
 ###########################################################
 
 #
