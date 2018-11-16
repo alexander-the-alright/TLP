@@ -1,3 +1,5 @@
+
+
 noun -> gendered intrinsicly
 
 word		-->	word
@@ -33,3 +35,27 @@ conjunction -> joins two or more parts of a sentence
 
 word		-->	several forms idk
 -----------------------------------------------------------------------------
+
+1)  replace all tabs with spaces
+	import os
+	os.name
+	ternary statement
+
+2)  built in verb forms for irregular verbs
+	conjugate regular verbs on the fly
+	literally not even hard
+
+3)  select language on the fly
+
+4)  Russian input parsing
+
+5)  lookup functions for different parts of sentence
+
+6)  auto-suggestion
+	did you mean _____ ?
+	literally AI
+	god i should take AI
+
+7)  comment the entire file out bruh
+
+8)  Change log
